@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Compra no Supermercado</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main class="card">
+        <h1>Calculadora de Compra</h1>
+
+        <form action="calculaCompra.php" method="post">
+            <label for="valorCompra">Valor da compra (R$):</label>
+            <input type="number" name="valorCompra" id="valorCompra" step="0.01" min="0" required />
+
+            <br /><br />
+
+            <p>Pagamento com cartão?</p>
+
+            <span class="option">
+        <input type="checkbox" name="cartao" id="cartao" value="sim" />
+        <label for="cartao">Sim</label>
+      </span>
+
+            <br /><br />
+
+            <p>Deseja entrega domiciliar?</p>
+
+            <span class="option">
+        <input type="checkbox" name="entrega" id="entrega" value="sim" />
+        <label for="entrega">Sim</label>
+      </span>
+
+            <br /><br />
+
+            <input type="submit" value="Calcular" />
+
+            <input type="reset" value="Limpar" />
+        </form>
+    </main>
+</body>
+
+</html>
